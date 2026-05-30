@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://bi3jga2tcluoa"]
 
-[ext_resource type="Script" uid="uid://coqp1b2rfhfw6" path="res://scripts/MangaImpactTest.gd" id="1_7drbs"]
-[ext_resource type="Shader" uid="uid://ehhcpp846wsn" path="res://shaders/manga_impact.gdshader" id="2_udtbu"]
+[ext_resource type="Script" uid="uid://coqp1b2rfhfw6" path="res://scripts/2D/MangaImpactTest.gd" id="1_lxc0j"]
+[ext_resource type="Shader" uid="uid://ehhcpp846wsn" path="res://shaders/2D/manga_impact.gdshader" id="2_1n2al"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_udtbu"]
-shader = ExtResource("2_udtbu")
+shader = ExtResource("2_1n2al")
 shader_parameter/impact = 0.7870000373825
 shader_parameter/impact_center = Vector2(0.5, 0.5)
 shader_parameter/zoom_strength = 0.0150000007125
@@ -20,7 +20,7 @@ shader_parameter/ink_color = Color(0.02, 0.018, 0.015, 1)
 shader_parameter/paper_color = Color(1, 0.9036667, 0.65999997, 1)
 
 [node name="MangaImpactTest" type="Node2D"]
-script = ExtResource("1_7drbs")
+script = ExtResource("1_lxc0j")
 
 [node name="Background" type="ColorRect" parent="."]
 anchors_preset = 15
